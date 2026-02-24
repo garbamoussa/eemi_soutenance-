@@ -1,10 +1,6 @@
 
 
 
-![Image](image/logo-eemi.svg)
-<h1 align=center>Customer Intelligence : de la Data au Machine Learning</h1>
-
-
 
 # Customer-Intelligence-de-la-Data-au-Machine-Learning 
 
@@ -217,10 +213,106 @@ Rédiger :
 
 1.5roadmap projet
 
+##################  Questions sur le notebook #################################
 
 
+✅ Questions sur le nettoyage des données
 
+Combien de lignes sont chargées après l’instruction pd.read_csv(..., nrows=100001) ?
+👉 Donnez la forme du DataFrame.
 
+Combien d’utilisateurs uniques (n_users) et d’items (n_items) avez-vous après le mapping des IDs ?
+
+Pourquoi a-t-on créé User_ID_new et Item_ID_new ?
+👉 Vérifiez avec un exemple concret d’utilisateur.
+
+Quel est le niveau de sparsity affiché par le notebook ?
+👉 Interprétez ce résultat.
+
+✅ Questions Memory-based (User / Item)
+
+Quelle est la taille de la matrice train_data_matrix ?
+
+Quelle métrique de similarité est utilisée dans pairwise_distances ?
+
+Quelle est la différence conceptuelle entre :
+
+user-based
+
+item-based
+
+Après exécution, quel modèle donne le RMSE le plus faible ?
+
+Expliquez pourquoi ce modèle est meilleur sur ce dataset.
+
+✅ Questions sur la comparaison des prédictions
+
+Comparez R et R_pred pour un utilisateur donné.
+👉 Donnez un exemple d’item correctement prédit.
+
+Trouvez un cas où la prédiction est mauvaise.
+👉 Expliquez pourquoi.
+
+✅ Questions recommandation personnalisée
+
+Exécutez :
+
+getrecom_membased_for_item(...)
+
+👉 Quels sont les 3 premiers items recommandés ?
+
+Quelle différence entre :
+
+ch="all"
+
+ch="discover"
+
+Pourquoi exclure les items déjà notés ?
+
+✅ Questions SVD (Model-based)
+
+Quel est le rôle de svds ?
+
+Combien de dimensions latentes sont utilisées ?
+
+Quel est le RMSE obtenu avec SVD ?
+👉 Comparez avec memory-based.
+
+Pourquoi faut-il normaliser la matrice prédite ?
+
+✅ Questions SGD-WR
+
+Quel est le rôle des matrices P et Q ?
+
+Que représente le paramètre :
+
+k
+
+lambda
+
+Comment évolue le RMSE au fil des steps ?
+👉 Décrivez la courbe.
+
+Quel RMSE final est obtenu avec SGD ?
+👉 Est-il meilleur que SVD ?
+
+✅ Questions de réflexion (très efficaces pour forcer l’exécution)
+
+Testez plusieurs valeurs de k.
+👉 Comment change le RMSE ?
+
+Testez un autre utilisateur que 18.
+👉 Les recommandations changent-elles ?
+
+Quel modèle recommanderiez-vous en production et pourquoi ?
+
+⭐ Questions bonus (niveau master)
+
+Pourquoi la sparsity pose problème aux modèles memory-based ?
+
+Expliquez le cold-start dans ce notebook.
+
+Comment hybrider memory-based et model-based ici ?
 
 
 
