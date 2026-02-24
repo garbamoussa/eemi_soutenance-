@@ -1,8 +1,33 @@
 
+
+
+![Image](image/logo-eemi.svg)
+<h1 align=center>Customer Intelligence : de la Data au Machine Learning</h1>
+
+
+
+# Customer-Intelligence-de-la-Data-au-Machine-Learning 
+
+
+
+##  Soutenance et livrable final
+
+
+### Cas pratique : Système de recommandation de films
+
+#### Consignes de l'évaluation 
+Présentation du projet final basé sur une étude de cas
+Soutenance orale : Présentation des résultats et recommandations
+Critères d'évaluation : rigueur, profondeur d'analyse et créativité
+Retour et conseils pour l'amélioration future
+Discussion autour des tendances futures en Customer Intelligence
+
+
+
 ##################  Cas pratique : Système de recommandation de films #################################
 
 
-#1.  Contexte
+###  Contexte
 
 Une plateforme de streaming inspirée de
 👉 MovieLens
